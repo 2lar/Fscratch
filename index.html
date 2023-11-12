@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
+    <title>Food</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    <header><h1>Food</h1></header>
+
+    <div class="search">
+        <input type="text" id="search-bar" placeholder="What do you have?">
+        <button id="search-button">Search</button> <!-- Adjusted line -->
+    </div>
+
+    <div class="login">
+        <button onclick="window.location.href='./login.html'">Login</button>
+    </div>
+
+    <div class="random-meal">
+        <button id="random-meal-button">Get a Random Meal</button> <!-- Adjusted line -->
+    </div>
+
+    <div class="recently-viewed">
+        <h2>Recently Viewed</h2>
+        <div id="recentlyViewed"></div>
+    </div>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>497Food</title>
+    <style>
+      /* You'll need to add CSS styles here */
+    </style>
 </head>
 <body>
 
-    <h1>Hello, World!</h1>
+    <header><h1>497Food</h1></header>
 
+    <div class="search">
+        <input type="text" id="search-bar" placeholder="What do you have?">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <div class="login">
+        <button onclick="window.location.href='./login.html'">Login</button>
+    </div>
+
+    <div class="random-meal">
+        <button onclick="randomMeal()">Get a Random Meal</button>
+    </div>
+
+    <div class="recently-viewed">
+        <h2>Recently Viewed</h2>
+        <div id="recentlyViewed"></div>
+    </div>
+
+    <script>
+        function search() {
+           var inputVal = document.getElementById("search-bar").value;
+           // Here goes your code to perform the search and show the results
+        }
+
+        function randomMeal() {
+           // Here goes your code to display a random meal
+        }
+   
+        window.onload = function() {
+            // Code to display recently viewed items
+            let recentlyViewedList = ''; // this string must contain all recently viewed items in acceptable HTML form
+            document.getElementById('recentlyViewed').innerHTML = recentlyViewedList;
+        };
+    </script>
 </body>
-</html>
+</html> -->
